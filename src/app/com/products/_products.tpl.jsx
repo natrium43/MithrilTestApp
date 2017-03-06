@@ -1,4 +1,4 @@
-<div class="products">
+  <div class="products">
   <form onsubmit={u.silence()}>
     <input placeholder="Search..." value={ctrl.filterText()} onkeyup={m.withAttr('value', ctrl.filterText)} />
     <p>

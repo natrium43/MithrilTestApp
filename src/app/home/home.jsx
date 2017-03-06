@@ -3,6 +3,7 @@ var tabs = require('com/tabs/tabs');
 var todo = require('com/todo/todo');
 var u = require('com/u');
 
+
 exports.controller = function() {
   this.tabs = u.init(tabs({
     label: 'Todo',

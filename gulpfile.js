@@ -2,6 +2,7 @@
 
 var configs = {
   buildAppCss: 'build/public/src/app.css',
+  buildLoginCss: 'build/public/src/login.css',
   buildVendorCss: 'build/public/src/vendor.css',
 
   buildAssets: 'build/public/assets/',
@@ -22,6 +23,7 @@ var configs = {
   compileSrc: 'bin/public/src/',
 
   appLess: 'src/less/app.less',
+  loginLess:'src/less/login.less',
   vendorLess: 'src/less/vendor.less',
 };
 
@@ -45,6 +47,7 @@ var vendorFiles = {
   js: [
     'vendor/mithril/mithril.js',
     'vendor/min-require/min-require.js',
+    'vendor/underscore/underscore.js'
   ],
 };
 
@@ -96,6 +99,7 @@ function buildStyles(src, destFile, options, cb) {
 // Generate build/public/assets/app-***.css
 gulp.task('buildAppStyles',function(cb) {
   buildStyles(configs.appLess, configs.buildAppCss, {sourceMap:true}, cb);
+  // buildStyles(configs.loginLess, configs.buildLoginCss, {sourceMap:true}, cb);
 });
 
 // Generate build/public/assets/vendor-***.css

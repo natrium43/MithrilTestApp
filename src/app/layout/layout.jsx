@@ -4,7 +4,7 @@ function layout($module) {
 
   function controller() {
     this.com = u.init($module);
-    this.tabs = [{href:'/',label:'Home'},{href:'/about',label:'About'}];
+    this.tabs = [{href:'/',label:'Home'},{href:'/login', label:'Login' } ,{href:'/about',label:'About'}, {href:'/library',label:'Library'}];
   }
 
   function view(ctrl) {

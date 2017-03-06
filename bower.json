@@ -5,5 +5,8 @@
     "mithril": "~0.1.13",
     "min-require": "~0.1.2",
     "bootstrap": "~3.1.1"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
   }
 }
